@@ -60,6 +60,8 @@ APIs Used:
     * User can find a reference for a word.
 * Reference Detail
     * User can view references for given word.
+* Settings
+    * User can edit settings for better accessibility.
 
 ### 3. Navigation
 
@@ -86,6 +88,10 @@ APIs Used:
     * Reference Stream --> Settings
 * Reference Detail
    *  Reference --> Reference Stream
+* Settings
+   * Settings --> Dictionary Stream
+   * Settings --> Thesaurus Stream
+   * Settings --> Reference Stream
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
