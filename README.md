@@ -94,7 +94,6 @@ APIs Used:
    * Settings --> Reference Stream
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="http://g.recordit.co/djrbrc515z.gif">
 
 
