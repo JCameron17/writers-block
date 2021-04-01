@@ -95,7 +95,8 @@ APIs Used:
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="http://g.recordit.co/djrbrc515z.gif">
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
