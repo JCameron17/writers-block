@@ -117,7 +117,7 @@ Settings Model
 |----------|------|-------------|
 |textSize| Integer | size of text throughout the application|
 |playbackVolume| Integer | volume of text to speech |
-
+|playbackSpeed| Integer | speed of text to speech |
 
 ### Networking
 - [Add list of network requests by screen ]
