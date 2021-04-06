@@ -102,9 +102,17 @@ APIs Used:
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Word Model
+| Property | Type | Description |
+|----------|------|-------------|
+|searchedWord| String | word the user intends to look up|
+|wordDefinition| Object | API reference call to definition of searchedWord|
+|wordSynonyms| Object | API reference call to synonyms of searchedWord|
+|wordAytonyms| Object | API reference call to antonyms of searchedWord|
+|wordReferences| Object | API reference call to references of searchedWord|
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
