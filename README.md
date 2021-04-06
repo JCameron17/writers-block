@@ -112,6 +112,12 @@ Word Model
 |wordAytonyms| Object | API reference call to antonyms of searchedWord|
 |wordReferences| Object | API reference call to references of searchedWord|
 
+Settings Model
+| Property | Type | Description |
+|----------|------|-------------|
+|textSize| Integer | size of text throughout the application|
+|playbackVolume| Integer | volume of text to speech |
+
 
 ### Networking
 - [Add list of network requests by screen ]
