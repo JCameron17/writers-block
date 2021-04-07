@@ -120,6 +120,9 @@ Settings Model
 |playbackSpeed| Integer | speed of text to speech |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+Dictionary Network Requests
+| HTTP Verb | Endpoint | Description|
+|-----------|----------|------------|
+| GET | /words | gets all words |
+| GET | /words?sp=word | gets searched word |
+| GET | /words?sp=word&md=dpr | gets definition, part of speech, and pronunciation of searched word |
