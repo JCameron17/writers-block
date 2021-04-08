@@ -132,3 +132,14 @@ Thesaurus Network Requests
 | GET | /words | gets all words |
 | GET | /words?sp=word | gets searched word |
 | GET | /words?ml=word | gets words with a meaning similar to the searched word |
+
+Reference Network Requests 
+| HTTP Verb | Endpoint | Description|
+|-----------|----------|------------|
+| GET | /words | gets all words |
+| GET | /words?sp=word | gets searched word |
+| GET | /words?rel_jjb=words&topics=nouns | gets adjectives describing words sorted by how related they are by noun|
+| GET | /words?rel_jja=words | gets nouns that are often described by the adjective words|
+| GET | /words?rel_trg=words | gets words that are triggered by (strongly associated with) the word words|
+| GET | /sug?s=rawand | get suggestions for the searched words|
+
