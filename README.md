@@ -126,3 +126,10 @@ Dictionary Network Requests
 | GET | /words | gets all words |
 | GET | /words?sp=word | gets searched word |
 | GET | /words?sp=word&md=dpr | gets definition, part of speech, and pronunciation of searched word |
+
+Thesaurus Network Requests
+| HTTP Verb | Endpoint | Description|
+|-----------|----------|------------|
+| GET | /words | gets all words |
+| GET | /words?sp=word | gets searched word |
+| GET | /words?ml=word | gets words with a meaning similar to the searched word |
