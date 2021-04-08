@@ -38,7 +38,6 @@ APIs Used:
 * User can search for a word.
 * User can view a word's definition, pronunciation, and example sentence.
 * User can view a word's synonyms and antonyms.
-* User can find a reference for a word.
 * User can view references for given word.
 
 **Optional Nice-to-have Stories**
