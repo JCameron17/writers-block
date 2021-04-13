@@ -13,6 +13,7 @@
 		5062CA37261FA43400C3DFA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062CA35261FA43400C3DFA8 /* Main.storyboard */; };
 		5062CA39261FA43900C3DFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5062CA38261FA43900C3DFA8 /* Assets.xcassets */; };
 		5062CA3C261FA43900C3DFA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062CA3A261FA43900C3DFA8 /* LaunchScreen.storyboard */; };
+		5062CA45261FA5A700C3DFA8 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5062CA38261FA43900C3DFA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5062CA3B261FA43900C3DFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5062CA3D261FA43900C3DFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5062CA38261FA43900C3DFA8 /* Assets.xcassets */,
 				5062CA3A261FA43900C3DFA8 /* LaunchScreen.storyboard */,
 				5062CA3D261FA43900C3DFA8 /* Info.plist */,
+				5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */,
 			);
 			path = "writers-block";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				5062CA34261FA43400C3DFA8 /* ViewController.swift in Sources */,
 				5062CA30261FA43400C3DFA8 /* AppDelegate.swift in Sources */,
+				5062CA45261FA5A700C3DFA8 /* DictionaryViewController.swift in Sources */,
 				5062CA32261FA43400C3DFA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
