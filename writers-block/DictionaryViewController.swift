@@ -38,6 +38,8 @@ class DictionaryViewController: UIViewController {
 //            self.wordDatabase = dataDictionary["word"] as! [[String:Any]]
             print(dataDictionary)
             
+            
+            
            }
         }
         task.resume()
@@ -45,7 +47,12 @@ class DictionaryViewController: UIViewController {
         }
     
     
-        
+//    struct Dictionary {
+//        let searchedWord: String
+//        let definition: String
+//        let partOfSpeech: String
+//        let pronunciation: String
+//    }
 
 
 

@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter word..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-n7-CvO">
-                                <rect key="frame" x="26" y="177" width="363" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-IC-4C7">
+                                <rect key="frame" x="20" y="188" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -28,7 +28,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Writer's Block" id="hQh-pM-31B"/>
                     <connections>
-                        <outlet property="searchBar" destination="0TK-n7-CvO" id="tX4-Bg-YSh"/>
+                        <outlet property="searchBar" destination="Xee-IC-4C7" id="LL2-Ci-ZxO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHa-9N-TPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
