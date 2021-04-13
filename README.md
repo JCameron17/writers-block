@@ -14,8 +14,6 @@ Original App Design Project - README Template
 If you ever need to write anything: a paper, a poem, an email, then Writer' Block is for you. This app defines words, finds synonyms, and even gives you examples for how to use the words you search. 
 
 APIs Used: 
-* [Merriam-Webster's Collegiate Dictionary with Audio]("https://dictionaryapi.com/products/api-collegiate-dictionary")
-* [Merriam-Webster's Thesaurus]("https://dictionaryapi.com/products/api-collegiate-thesaurus")
 * [Datamuse]("http://www.datamuse.com/api/")
 * Apple's Accessibility Settings
 
