@@ -27,7 +27,7 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.delegate = self
         
-        let url = URL(string: "http://api.datamuse.com/words?sp=*&md=d")!
+        let url = URL(string: "http://api.datamuse.com/words?max=10&sp=*&md=dpr")!
 
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -71,9 +71,21 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         let wordData = word["word"] as? String
         cell.searchedWordLabel.text = wordData
 //        cell.definitionLabel.text = word["defs"] as? String
+//        print(word["defs"])
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let word = wordDatabase[indexPath.row]
+        let tags = word["tags"] as? String
+        let dictionaryDetailsViewController = segue.destination as! DictionaryDetailsViewController
+        
+        dictionaryDetailsViewController.tags = tags
+        dictionaryDetailsViewController.word = word
+        
+    }
 }
 
 

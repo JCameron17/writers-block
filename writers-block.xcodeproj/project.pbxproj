@@ -14,8 +14,8 @@
 		5062CA39261FA43900C3DFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5062CA38261FA43900C3DFA8 /* Assets.xcassets */; };
 		5062CA3C261FA43900C3DFA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5062CA3A261FA43900C3DFA8 /* LaunchScreen.storyboard */; };
 		5062CA45261FA5A700C3DFA8 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */; };
-		5062CA512626399700C3DFA8 /* Dict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA502626399700C3DFA8 /* Dict.swift */; };
 		5062CA5426263E4500C3DFA8 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA5326263E4500C3DFA8 /* DictionaryTableViewCell.swift */; };
+		5062CA582628E81A00C3DFA8 /* DictionaryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA572628E81A00C3DFA8 /* DictionaryDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		5062CA3B261FA43900C3DFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5062CA3D261FA43900C3DFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
-		5062CA502626399700C3DFA8 /* Dict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dict.swift; sourceTree = "<group>"; };
 		5062CA5326263E4500C3DFA8 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
+		5062CA572628E81A00C3DFA8 /* DictionaryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				5062CA3A261FA43900C3DFA8 /* LaunchScreen.storyboard */,
 				5062CA3D261FA43900C3DFA8 /* Info.plist */,
 				5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */,
-				5062CA502626399700C3DFA8 /* Dict.swift */,
 				5062CA5326263E4500C3DFA8 /* DictionaryTableViewCell.swift */,
+				5062CA572628E81A00C3DFA8 /* DictionaryDetailsViewController.swift */,
 			);
 			path = "writers-block";
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5062CA34261FA43400C3DFA8 /* ViewController.swift in Sources */,
-				5062CA512626399700C3DFA8 /* Dict.swift in Sources */,
+				5062CA582628E81A00C3DFA8 /* DictionaryDetailsViewController.swift in Sources */,
 				5062CA30261FA43400C3DFA8 /* AppDelegate.swift in Sources */,
 				5062CA45261FA5A700C3DFA8 /* DictionaryViewController.swift in Sources */,
 				5062CA32261FA43400C3DFA8 /* SceneDelegate.swift in Sources */,
