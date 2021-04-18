@@ -40,39 +40,29 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.delegate = self
         
-            let url = URL(string: "http://api.datamuse.com/words?max=10&sp=*&md=dpr")!
-
-            let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-            let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
-            let task = session.dataTask(with: request) { (data, response, error) in
-               // This will run when the network request returns
-               if let error = error {
-                  print(error.localizedDescription)
-               } else if let data = data {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:Any]]
-                self.wordDatabase = dataDictionary
-                self.tableView.reloadData()
-    //            print(self.wordDatabase)
-               }
-            }
-            task.resume()
-            
-            }
+        fetchWords()
+        }
         
-    //    func getAPIData(matching query: String){
-    //        var components = URLComponents()
-    //        components.scheme = "http"
-    //        components.host = "api.datamuse.com"
-    //        components.path = "/words"
-    //        components.queryItems = [
-    //            URLQueryItem(name: "q", value: query),
-    //            URLQueryItem(name: "def", value: "md=d"),
-    //            URLQueryItem(name: "pos", value: "md=p"),
-    //            URLQueryItem(name: "pron", value: "md=r")
-    //        ]
-    //
-    //        let url = components.url
-    //    }
+    func fetchWords() {
+        let url = URL(string: "http://api.datamuse.com/words?max=10&sp=*&md=dpr")!
+
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+           // This will run when the network request returns
+           if let error = error {
+              print(error.localizedDescription)
+           } else if let data = data {
+            let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:Any]]
+            self.wordDatabase = dataDictionary
+            self.tableView.reloadData()
+//            print(self.wordDatabase)
+           }
+        }
+        task.resume()
+        
+    }
+   
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return wordDatabase.count
         }
@@ -91,14 +81,29 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
             let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPath(for: cell)!
             let word = wordDatabase[indexPath.row]
-            let tags = word["tags"] as? String
+//            let tags = word["tags"] as? String
             let dictionaryDetailsViewController = segue.destination as! DictionaryDetailsViewController
 
-            dictionaryDetailsViewController.tags = tags
+//            dictionaryDetailsViewController.tags = tags
             dictionaryDetailsViewController.word = word
 
         }
     }
+
+//    func getAPIData(matching query: String){
+//        var components = URLComponents()
+//        components.scheme = "http"
+//        components.host = "api.datamuse.com"
+//        components.path = "/words"
+//        components.queryItems = [
+//            URLQueryItem(name: "q", value: query),
+//            URLQueryItem(name: "def", value: "md=d"),
+//            URLQueryItem(name: "pos", value: "md=p"),
+//            URLQueryItem(name: "pron", value: "md=r")
+//        ]
+//
+//        let url = components.url
+//    }
 
 
     //extension Endpoint {
