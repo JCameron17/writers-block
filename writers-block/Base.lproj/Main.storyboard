@@ -20,14 +20,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="6Eb-KM-F7f">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wordCell" id="5ak-GZ-7jf" customClass="DictionaryTableViewCell" customModule="writers_block" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5ak-GZ-7jf" id="XQj-6d-hdn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -70,7 +65,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Writer's Block" id="hQh-pM-31B"/>
                     <connections>
-                        <outlet property="searchBar" destination="6Eb-KM-F7f" id="rCG-Hb-wtG"/>
                         <outlet property="tableView" destination="beh-Lh-3lX" id="mr9-Qe-yoG"/>
                     </connections>
                 </viewController>

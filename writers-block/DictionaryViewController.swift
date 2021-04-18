@@ -11,55 +11,63 @@ import UIKit
 //    let path: String
 //    let queryItems: [URLQueryItem]
 //}
+struct APIResponse: Codable {
+    let word: String
+//    let tags: [String]
+    let score: Int
+    let defs: [String]?
+}
 
-class DictionaryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+struct Results: Codable {
+    let word: String
+    
+}
+
+class DictionaryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
     var wordDatabase = [[String:Any]]()
+    let searchController = UISearchController()
     
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
         
         tableView.dataSource = self
         tableView.delegate = self
         
-        let url = URL(string: "http://api.datamuse.com/words?max=10&sp=*&md=dpr")!
+        fetchWords()
+        
+        }
+    
+    func fetchWords() {
+        let url = URL(string: "http://api.datamuse.com/words?&sp=*&md=dpr")!
 
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
            // This will run when the network request returns
            if let error = error {
-              print(error.localizedDescription)
+              print("net request error:", error.localizedDescription)
            } else if let data = data {
-            let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:Any]]
-            self.wordDatabase = dataDictionary
+            do {let jsonResult = try JSONDecoder().decode([APIResponse].self, from: data)
+                print(jsonResult)}
+            catch {
+                print("api error: " ,error)
+            }
+//            let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:Any]]
+//            self.wordDatabase = dataDictionary
             self.tableView.reloadData()
 //            print(self.wordDatabase)
            }
         }
         task.resume()
         
-        }
-    
-//    func getAPIData(matching query: String){
-//        var components = URLComponents()
-//        components.scheme = "http"
-//        components.host = "api.datamuse.com"
-//        components.path = "/words"
-//        components.queryItems = [
-//            URLQueryItem(name: "q", value: query),
-//            URLQueryItem(name: "def", value: "md=d"),
-//            URLQueryItem(name: "pos", value: "md=p"),
-//            URLQueryItem(name: "pron", value: "md=r")
-//        ]
-//
-//        let url = components.url
-//    }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return wordDatabase.count
@@ -86,6 +94,14 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         dictionaryDetailsViewController.word = word
         
     }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchedWord = searchController.searchBar.text else {
+            return
+        }
+        print(searchedWord)
+    }
+    
 }
 
 
