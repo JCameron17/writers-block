@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F461B99262D3607004ECB05 /* ThesaurusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F461B98262D3607004ECB05 /* ThesaurusViewController.swift */; };
+		2F461B9C262D36F8004ECB05 /* TheaurusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F461B9B262D36F8004ECB05 /* TheaurusTableViewCell.swift */; };
 		5062CA30261FA43400C3DFA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA2F261FA43400C3DFA8 /* AppDelegate.swift */; };
 		5062CA32261FA43400C3DFA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA31261FA43400C3DFA8 /* SceneDelegate.swift */; };
 		5062CA34261FA43400C3DFA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5062CA33261FA43400C3DFA8 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F461B98262D3607004ECB05 /* ThesaurusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThesaurusViewController.swift; sourceTree = "<group>"; };
+		2F461B9B262D36F8004ECB05 /* TheaurusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaurusTableViewCell.swift; sourceTree = "<group>"; };
 		5062CA2C261FA43400C3DFA8 /* writers-block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "writers-block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5062CA2F261FA43400C3DFA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5062CA31261FA43400C3DFA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				5062CA44261FA5A700C3DFA8 /* DictionaryViewController.swift */,
 				5062CA5326263E4500C3DFA8 /* DictionaryTableViewCell.swift */,
 				5062CA572628E81A00C3DFA8 /* DictionaryDetailsViewController.swift */,
+				2F461B98262D3607004ECB05 /* ThesaurusViewController.swift */,
+				2F461B9B262D36F8004ECB05 /* TheaurusTableViewCell.swift */,
 			);
 			path = "writers-block";
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5062CA34261FA43400C3DFA8 /* ViewController.swift in Sources */,
+				2F461B99262D3607004ECB05 /* ThesaurusViewController.swift in Sources */,
+				2F461B9C262D36F8004ECB05 /* TheaurusTableViewCell.swift in Sources */,
 				5062CA582628E81A00C3DFA8 /* DictionaryDetailsViewController.swift in Sources */,
 				5062CA30261FA43400C3DFA8 /* AppDelegate.swift in Sources */,
 				5062CA45261FA5A700C3DFA8 /* DictionaryViewController.swift in Sources */,
